@@ -1,116 +1,266 @@
-.container {
-  padding: 0 2rem;
+.body{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.heroImage{
+  background: url("https://firebasestorage.googleapis.com/v0/b/ksjournal-64785.appspot.com/o/coverpage.jpg?alt=media&token=75f381ec-ca9b-47f0-b379-96e77f391b5d");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  animation-name: heroImage;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  height: 200px;
+  filter: brightness(65%);
+}
+
+@keyframes heroImage {
+  from {
+    background-position: top;
+    filter: brightness(100%);
+  }
+  to {
+    background-position: bottom;
+    filter: brightness(65%);
+  }
+}
+
+.heroText{
+  transform: translate(0,-170px);
+  font-size: 170%;
+  color: white;
+  opacity: 0%;
+  position: absolute;
+
+  animation-name: heroText;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.heroText h1{
+  margin: 0;
+}
+.heroText p{
+  margin: 0;
+  letter-spacing: 6px;
+}
+.heroText :after{
+  opacity: 100%;
+}
+
+@keyframes heroText {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .heroText{
+    transform: translate(-30px,-100px);
+    text-align: center;
+    width: 100%;
+    font-size: 100%;
+  }
+  .heroImage{
+    height: 120px;
+  }
+}
+.coverphoto{
+  text-align: center;
+  padding-right: 20px;
+  font-size: 120%;
+  letter-spacing: 1.5px;
+  color: #333;
+}
+.coverphoto img{
+  width: 400px;
+}
+
+.coverDescription{
+  
+  color: #222;
+  line-height: 160%;
+  font-size: 90%;
+  margin-top: 0;
+  margin: 3%;
+  padding: 2%;
+  outline: solid;
+  outline-width: thin;
+  outline-color: lightgrey;
+  padding-bottom: 20px;
+  transition: 0.3s;
+}
+
+.coverDescription:hover{
+  outline-width: normal;
+  outline-color: black;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.coverDescription h1{
+  color: #444;
+  font-size: 550%;
+  margin: 40px 0px 10px 0px;
+
+}
+.coverDescription h2{
+  text-align: right;
+  margin: 0;
+  padding: 10px 0px;
+}
+.coverDescription img{
+  width: 100%;
+  
+  padding-bottom: 1%;
+}
+.coverDescription p{
+  padding: 0%;
+}
+
+
+.featuredPoemHeader h3{
+  color: #333;
+  letter-spacing: 3px;
+  font-size: 200%;
+  margin: 0;
+  transform: translate(0px, -13px);
+}
+.featuredPoemWrap{
+  display: flex;
+  border-left: solid;
+
+  border-color: darkgrey;
+  margin: 15px 1px;
+  height: 50px;
+}
+.featuredPoemWrap:hover{
+  transition: 0.5s;
+  border-color: #f66;
+  color: black;
+  cursor: pointer;
+}
+.featuredPoemImage img{
+  width: 80px;
+  margin: 10px;
+}
+.featuredPoemText{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  padding-left: 10px;
+}
+.featuredPoemText h3{
+  margin: 0;
+
+  letter-spacing: 1.5px;
+}
+.featuredPoemText p{
+  font-style: italic;
+  color: grey;
+  margin: 0;
 }
 
-.footer {
+.readIssue{
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  border: none;
+  border-color: darkgrey;
+  margin: 5px 1px;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
+  font-size: 150%;
+  color: #333;
   text-decoration: underline;
 }
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+.readIssue:hover{
+  transition: 0.3s;
+  color: #666;
 }
 
-.title,
-.description {
+
+.sectionHeader{
+  text-align: left;
+  color: #222;
+  line-height: 160%;
+  font-size: 90%;
+  margin: 40px;
+}
+.sectionHeader img{
+  
+  width: 50px;
+  transform: scale(-1, -1);
+
+}
+.sectionHeader h1{
+  font-size: 400%;
+}
+.sectionHeader h2{
+  font-size: 300%;
+  letter-spacing: 10px;
+}
+.sectionHeader h3{
+  font-size: 150%;
+  letter-spacing: 2px;
+}
+.sectionHeader p{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blogWrap{
   text-align: center;
+  width: 280px;
+  margin: 10px 0px;
+}
+.blogWrap img{
+  height: 300px;
+
+}
+.blogWrap h3{
+  margin: 0;
+  color: #333;
+  font-weight: normal;
+  line-height: 160%;
+  letter-spacing: 1px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.newsWrap{
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
+  height: 100px;
+  margin: 0px 0px 30px 0px;
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
 }
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.newsWrap img{
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
 }
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.newsText{
+  margin: 0px 10px;
+  font-size: 115;
+  letter-spacing: 1.3px;
+  color: #333;
+  width: 210px;
 }
-
-.card p {
+.newsText h3{
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  margin-bottom: 10px;
 }
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.newsText p{
+  margin: 0;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

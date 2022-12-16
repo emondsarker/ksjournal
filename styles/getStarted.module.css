@@ -1,0 +1,112 @@
+
+.empty{
+  height: 420px;
+}
+.fixed{
+  position:fixed;
+  width: 800px;
+  z-index: -10;
+  transform: translate(0px,-450px);
+}
+.title{
+  display: table;
+  font-size: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.title h1{
+  vertical-align: middle;
+}
+.title h3{
+  transform: translate(0px,-10px);
+}
+.title p{
+  font-size: 140%;
+}
+
+.title button{
+  font-size: 100%;
+  background: #a90020;
+  border-radius: 10px;
+  padding: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.title button:hover{
+  filter: brightness(200%);
+}
+
+.karjoGuideTitle{
+  text-align: center;
+  font-size: 130%;
+  border-style: dashed;
+  border-left: none;
+  border-right: none;
+}
+.swipeUp{
+  text-align: center;
+  transform: translate(0px,-30px);
+  padding-right: 20px;
+}
+.steps{
+
+  width: 250px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.steps img{
+
+
+}
+
+.stepsText{
+  font-size: 120%;
+  padding: 20px;
+}
+.stepsText h3{
+  font-size: 150%;
+}
+
+.reasonsToUse{
+  text-align: center;
+}
+.reasonsToUse img{
+  height: 150px;
+}
+
+.signUp{
+
+}
+.signUp a{
+  font-size: 200%;
+  font-weight: bold;
+}
+.signUp a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.sex{
+  color:white;
+  background: #a90020;
+  border-radius: 25px;
+  padding-right: 30px;
+}
+
+.reasonsToUseImages
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}

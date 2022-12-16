@@ -1,0 +1,115 @@
+
+.Header{
+  text-align: center;
+  font-size: 600%;
+  letter-spacing: 10px;
+  margin: 50px 0px 0px 0px;
+  color: #333;
+}
+
+.Image{
+  border: solid;
+  border-color: lightgrey;
+  border-width: thin;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: auto;
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+.Image h1{
+  border-bottom: solid;
+  border-color: lightgrey;
+  padding-bottom: 20px;
+  margin-top: 5px;
+  color: #333;
+  letter-spacing: 1.5px;
+}
+.Image img{
+  width: 300px;
+  border-radius: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.Image button{
+  font-weight: bold;
+  width: 100%;
+  padding: 10px;
+  font-size: 150%;
+  color: white;
+  background-color: #d33;
+  border: none;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+.Image button:hover{
+  cursor: pointer;
+  filter: brightness(110%);
+  transition: 0.3s;
+}
+
+
+.text{
+  letter-spacing: 1.2px;
+  font-size: 110%;
+  line-height: 150%;
+  color: #333;
+  margin-bottom: 0;
+}
+.text li{
+  list-style: circle;
+  margin-bottom: 20px;
+}
+
+.thankYou{
+  text-align: center;
+  letter-spacing: 1.2px;
+  font-size: 110%;
+  line-height: 150%;
+  color: #333;
+  border-top: solid;
+  border-color: lightgrey;
+  padding-top: 50px;
+}
+.thankYou h1{
+  font-size: 600%;
+}
+.thankYou h2{
+  font-size: 100%;
+}
+.thankYou li{
+  font-size: 200%;
+  line-height: 200%;
+
+}
+
+.contacts{
+  display: flex;
+  flex-direction: column;
+}
+.contacts a{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: solid;
+  transition: 0.3s;
+  border-color: lightgrey;
+  margin: 10px 0px;
+}
+.contacts p{
+  margin: 0;
+  padding-left: 10px;
+}
+.contacts h3{
+  margin: 0;
+  padding-left: 10px;
+  margin-left: auto;
+  border-left: solid;
+  width: 170px;
+}
+.contacts a:hover{
+  color: black;
+  transition: 0.3s;
+  border-color: black;
+}

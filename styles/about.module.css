@@ -1,0 +1,159 @@
+.header{
+  text-align: center;
+  font-size: 600%;
+  color: #222;
+  margin: 200px 10px;
+  border-left: solid;
+  border-width: 30px;
+}
+.header h1{
+  line-height: 150px;
+  margin: 0;
+}
+.header h3{
+  line-height: 30px;
+  font-size: 60%;
+  transform: translate(0px,15px);
+  font-style: italic;
+  margin: 0;
+}
+
+.subHeader{
+  font-size: 120%;
+  color: #222;
+  margin-bottom: 50px;
+}
+.subHeader h1{
+  font-size: 500%;
+  margin-bottom: 0;
+  margin-top: 150px;
+}
+.subHeader p{
+  line-height: 160%;
+  letter-spacing: 1.5px;
+  margin-top: 0;
+}
+
+.SinkGang{
+  border-left: solid;
+  border-width: 10px;
+  border-color: lightgreen;
+  padding-left: 30px;
+  max-width: 1000px;
+}
+.KitchenCrew{
+  border-left: solid;
+  border-width: 10px;
+  border-color: lightblue;
+  padding-left: 30px;
+  max-width: 1000px;
+}
+.NotForgotten{
+  border-left: solid;
+  border-width: 10px;
+  border-color: #f66;
+  padding-left: 30px;
+  max-width: 1000px;
+}
+.cardWrapper{
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #333;
+  height: 400px;
+
+}
+.cardWrapper img{
+  border-radius: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+  
+
+}
+.cardWrapper h2{
+  margin: 0;
+}
+.cardWrapper h3{
+  margin: 5px;
+  font-style: italic;
+  color: grey;
+  font-size: 80%;
+
+    max-width: 250px;
+}
+.cardWrapper p{
+  margin: 5px;
+  font-style: italic;
+  
+  color: grey;
+}
+
+.specialThanks{
+  font-size: 120%;
+  color: #222;
+  margin: 100px 0px;
+  line-height: 160%;
+  letter-spacing: 1.5px;
+  text-align: center;
+  border-top: solid;
+  border-bottom: solid;
+  padding: 20px;
+  border-width: thin;
+}
+
+@media (max-width: 600px) {
+  .header{
+    text-align: center;
+    font-size: 200%;
+    color: #222;
+    margin: 30px 0px 0px 0px;
+    border-left: solid;
+    padding: 20px;
+    border-width: 15px;
+  }
+  .header h1{
+    line-height: 30px;
+    margin: 0;
+  }
+  .header h3{
+    line-height: 30px;
+    font-size: 60%;
+    transform: translate(0px,10px);
+    font-style: italic;
+    margin: 0;
+  }
+  .subHeader h1{
+    font-size: 300%;
+  }
+  .subHeader p{
+    padding-left: 5px;
+    letter-spacing: 0;
+  }
+
+  .SinkGang{
+    padding: 0%;
+  }
+  .KitchenCrew{
+    padding: 0%;
+  }
+  .NotForgotten{
+    padding: 0%;
+  }
+
+  .cardWrapper{
+    height: 360px;
+    padding: 5px;
+  }
+  .cardWrapper img{
+    padding: 10px;
+  }
+  .cardWrapper h2{
+    font-size: 100%;
+  }
+  .cardWrapper p{
+    font-size: 90%;
+  }
+}

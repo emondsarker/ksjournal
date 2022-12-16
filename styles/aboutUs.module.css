@@ -1,0 +1,85 @@
+
+.Header{
+    text-align: center;
+    font-size: 300%;
+    letter-spacing: 5px;
+    margin: 50px 0px 0px 0px;
+    color: #333;
+  }
+  
+  .Image{
+    width: 100%;
+    border-radius: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .text{
+    letter-spacing: 1.2px;
+    font-size: 110%;
+    line-height: 150%;
+    color: #333;
+    margin-bottom: 0;
+  }
+  
+  .thankYou{
+    text-align: center;
+    letter-spacing: 1.2px;
+    font-size: 110%;
+    
+    color: #333;
+    border-top: solid;
+    border-color: lightgrey;
+    padding-top: 50px;
+  }
+  .thankYou h1{
+    font-size: 600%;
+  }
+  .thankYou h2{
+    font-size: 100%;
+  }
+  .thankYou li{
+    font-size: 200%;
+    line-height: 200%;
+  
+  }
+  
+  .contacts{
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts a{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: solid;
+    transition: 0.3s;
+    border-color: lightgrey;
+    margin: 10px 0px;
+  }
+  .contacts p{
+    margin: 0;
+    padding-left: 10px;
+  }
+  .contacts h3{
+    margin: 0;
+    padding-left: 10px;
+    margin-left: auto;
+    border-left: solid;
+    width: 170px;
+  }
+  .contacts a:hover{
+    color: black;
+    transition: 0.3s;
+    border-color: black;
+  }
+  
+  @media (max-width: 600px) {
+    .contacts h3{
+      display: none;
+    }
+    .Header{
+      font-size: 250%;
+      letter-spacing: 4px;
+    }
+  }

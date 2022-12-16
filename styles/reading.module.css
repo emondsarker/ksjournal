@@ -1,0 +1,230 @@
+
+.cover{
+  position: sticky;
+  top: 0;
+}
+.cover img{
+  width: 400px;
+  margin-top: 120px;
+  box-shadow: 0px 10px 20px -10px ;
+  
+}
+@media (max-width: 600px) {
+  .cover {
+    position: static;
+  }
+  .cover img{
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 10px 20px -10px ;
+    
+  }
+}
+
+.pageList{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin-top: 10px;
+  height: 570px;
+  overflow: scroll;
+}
+.pages{
+  padding-top: 90px;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  text-align: center;
+
+}
+.pageNumber{
+  margin: 10px;
+  border: solid;
+  height: 30px;
+  width: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding-top: 4px;
+  cursor: pointer;
+}
+
+@keyframes animateList {
+  from{
+    transform: translate(-1000px,0px);
+    opacity: 0%;
+  }
+  to{
+    transform: translate(0px,0px);
+    opacity: 100%;
+  }
+}
+
+@keyframes animateListItem {
+  from{
+    
+    opacity: 0%;
+  }
+  to{
+    transform: translate(0px,0px);
+    opacity: 100%;
+  }
+}
+
+.list{
+  animation: animateList;
+  animation-duration: 0.7s;
+  margin-top: 120px;
+  cursor: pointer;
+}
+.list h1{
+  font-size: 350%;
+  border-bottom: solid;
+  padding-bottom: 10px;
+}
+.list p{
+  margin: 0;
+}
+.listItem{
+  animation: animateListItem;
+  opacity: 0%;
+  animation-duration: 0.7s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+.poemTitle{
+  font-size: 130%;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+.author{
+  font-size: 110%;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: grey;
+}
+
+@keyframes animateSelectedPoem {
+  from{
+    transform: translate(-1000px,0px);
+    opacity: 0%;
+  }
+  to{
+    transform: translate(0px,0px);
+    opacity: 100%;
+  }
+}
+
+.selectedPoem{
+  animation-name: animateSelectedPoem;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  white-space: pre-line;
+  margin-top: 120px;
+  line-height: 160%;
+  color: #333;
+  letter-spacing: 1.2px;
+}
+.selectedPoem img{
+  width: 100%;
+  padding: 50px;
+}
+.selectedPoemTitle {
+  display: flex;
+  align-items: center;
+  border-top: solid;
+  border-bottom: solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.selectedPoemTitle a{
+  color: #333;
+}
+.selectedPoemTitle a:hover{
+  color: black;
+  cursor: pointer;
+}
+.selectedPoemButtons{
+  margin-left: auto;
+  margin-right: 20px;
+}
+.selectedPoemTitle h3{
+  margin: 0;
+}
+.selectedPoem h1{
+  font-size: 260%;
+  line-height: normal;
+}
+.selectedPoem p{
+  white-space: pre-line;
+}
+
+.unselectedPoem{
+  white-space: pre-line;
+  margin-top: 120px;
+  transform: translate(800px,0px);
+  opacity: 0%;
+  transition: 1s;
+}
+.unselectedPoem h3{
+  border-top: solid;
+  border-bottom: solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.unselectedPoem h1{
+  font-size: 260%;
+}
+
+.selectIssueTitle{
+  
+  text-align: center;
+  color: #333;
+  letter-spacing: 5px;
+}
+
+.selectIssue{
+  width: 200px;
+  margin-top: 50px;
+  box-shadow: 0px 10px 20px -10px ;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(1,1);
+  transition: 0.3s;
+}
+
+.selectIssue:hover{
+  transform: scale( 110%, 110%);
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .selectIssue{
+    width: 90%;
+    margin: 5%;
+  }
+}
+
+.selectedPoemBottom {
+  display: flex;
+  align-items: center;
+
+  padding-top: 10px;
+  
+}
+.selectedPoemBottomButtons{
+  margin-left: auto;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.selectedPoemBottomButtons a{
+  margin: 0;display: flex;
+  align-content: center;
+  font-size: 110%;
+  font-weight: bold;
+}
+.selectedPoemBottomButtons:hover{
+  cursor: pointer;
+}

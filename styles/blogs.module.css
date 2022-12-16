@@ -1,0 +1,200 @@
+
+.Header{
+    text-align: center;
+    font-size: 300%;
+    letter-spacing: 10px;
+    margin: 50px 0px 50px 0px;
+    color: #333;
+  }
+  .subHeader{
+    text-align: center;
+    letter-spacing: 10px;
+    margin: 50px 0px 0px 0px;
+    color: #333;
+  }
+  .BlogContainer{
+      display: flex;
+  }
+  .BlogContainer2{
+    display: flex;
+    margin-bottom: 10px;
+}
+  .BlogContainer:hover{
+      
+      outline: solid;
+      outline-width: 3px;
+      outline-offset: -3px;
+      transition: 0.2s;
+      cursor: pointer;
+  }
+  .BlogContainer2:hover{
+    outline: solid;
+      outline-width: 3px;
+      outline-offset: -3px;
+      
+      cursor: pointer;
+  }
+  @media (max-width: 600px) {
+      .BlogContainer{
+          display: block;
+      }
+  }
+  .news{
+    margin-top: 100px;
+  }
+  
+
+  
+  .Image img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    margin: -1px;
+  }
+  
+  .text{
+      
+    padding: 10px;
+    border-top: solid;
+    letter-spacing: 1.2px;
+    font-size: 90%;
+    color: #333;
+    margin-bottom: 0;
+  }
+  
+  .text img{
+    width: 600px;
+  }
+  .text li{
+    list-style: circle;
+    margin-bottom: 20px;
+  }
+  
+  .thankYou{
+    text-align: center;
+    letter-spacing: 1.2px;
+    font-size: 110%;
+    line-height: 150%;
+    color: #333;
+    border-top: solid;
+    border-color: lightgrey;
+    padding-top: 50px;
+  }
+  .thankYou h1{
+    font-size: 600%;
+  }
+  .thankYou h2{
+    font-size: 100%;
+  }
+  .thankYou li{
+    font-size: 200%;
+    line-height: 200%;
+  
+  }
+  
+  .contacts{
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts a{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: solid;
+    transition: 0.3s;
+    border-color: lightgrey;
+    margin: 10px 0px;
+  }
+  .contacts p{
+    margin: 0;
+    padding-left: 10px;
+  }
+  .contacts h3{
+    margin: 0;
+    padding-left: 10px;
+    margin-left: auto;
+    border-left: solid;
+    width: 170px;
+  }
+  .contacts a:hover{
+    color: black;
+    transition: 0.3s;
+    border-color: black;
+  }
+  
+  @media (max-width: 600px) {
+    .Header{
+      font-size: 200%;
+      letter-spacing: 0;
+    }
+    .subHeader{
+      letter-spacing: 0;
+      margin: 0;
+      margin-top: 10px;
+    }
+    .Image{
+      padding: 0;
+      width: 100%;
+    }
+    .Image img{
+      width: 100%;
+    }
+  }
+
+
+  .sideBar{
+      margin-top: 60px;
+      padding-top: 60px;
+      position: sticky;
+      top: 0;
+  }
+
+  .selectedBlog{
+    white-space: pre-line;
+    color: #555;
+  }
+  .selectedBlog h5{
+      text-align: center;
+      margin: 0;
+      border-bottom: solid;
+      padding-bottom: 20px;
+      font-style: italic;
+
+    }
+  .selectedBlog img{
+      object-fit: cover;
+    object-position: center;
+
+      width: 100%;
+      padding: 20px 0px;
+  }
+
+  .Image2 img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    
+  }
+  
+  .text2{
+      
+   padding-left: 5px;
+    border-top: solid;
+    letter-spacing: 1.2px;
+    font-size: 90%;
+    color: #333;
+    margin-bottom: 0;
+  }
+  .text2 h4{
+      margin: 0;
+      margin-top: 3px;
+  }
+  .text2 img{
+    width: 600px;
+  }
+  .text2 li{
+    list-style: circle;
+    margin-bottom: 20px;
+  }

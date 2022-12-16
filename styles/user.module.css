@@ -1,0 +1,148 @@
+
+.body{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
+}
+.coverPhoto{
+  width: 100%;
+  height: 300px;
+  display:flex;
+  justify-content: center;
+  z-index: -1;
+
+}
+
+.gradient{
+  height: 50px;
+  position:static;
+  transform: translate(0px,-50px);
+  background: linear-gradient(to bottom, rgba(255,0,0,0) 0%,rgba(255,255,255,2) 100%);
+}
+
+
+.profile{
+  background: white;
+  margin: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: lightgrey;
+  font-size: 100%;
+  top: 0;
+  color: #333;
+}
+
+.userName{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.userName h1{
+  margin: 0;
+  padding: 12px 10px;
+}
+
+.bio{
+  text-align: center;
+  padding-bottom: 10px;
+}
+.buttonRequest{
+  cursor: pointer;
+  width: 100%;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-size: 110%;
+  background: white;
+  border-style: solid;
+  border-width: thin;
+}
+.buttonRequest p{
+  margin: 0;
+  padding: 1px;
+  padding-left: 10px;
+}
+.buttonRequest:hover{
+  color: #a90020;
+}
+.buttonReport{
+  cursor: pointer;
+  width: 100%;
+  margin: 5px;
+  color:white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-size: 110%;
+  background: #a90020;
+}
+.userPhoto{
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: solid;
+  border-width: thin;
+  border-color: lightgrey;
+  padding-bottom: 20px;
+}
+
+.links{
+  display: flex;
+  align-items: center;
+}
+.links a{
+  padding-bottom: 4px;
+  margin: 5px 10px;
+}
+.links p{
+  padding-bottom: 4px;
+  margin: 5px 10px;
+  text-align: left;
+  font-weight: bold;
+  width: 100%;
+}
+.links a:hover{
+  text-decoration: underline;
+}
+
+.stuff{
+  position: sticky;
+  height: 10000px;
+}
+
+.gigWrapper{
+  background: white;
+  margin: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: lightgrey;
+  font-size: 100%;
+  top: 0;
+  color: #333;
+}
+.gigWrapper h3{
+  margin: 0;
+  letter-spacing: 10px;
+}
+
+.achievements{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.rating{
+  text-align: center;
+
+}
+.rating h1{
+  font-size: 250%;
+  transform: scale(150%);
+}

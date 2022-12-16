@@ -1,0 +1,198 @@
+.NavBarContainer{
+  background-color: white;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+}
+.Categories{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  border-bottom: solid;
+  border-color: lightgrey;
+  border-width: thin;
+  justify-content: flex-end;
+  
+  width: 100%;
+  max-width: 1250px;
+  
+  
+
+}
+.logoContainer{
+  margin: 0;
+  
+  
+  padding-right: 20px;
+  margin-right: auto;
+}
+.dropdown {
+  float: right;
+  overflow: hidden;
+  margin: 0px 0.5%;
+}
+.dropdown p{
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+
+.Categories button{
+  display: block;
+  position: relative;
+  background: white;
+  color: #555;
+  border: none;
+  font-size: 100%;
+  padding: 5px;
+  
+}
+.Categories button:hover{
+  cursor: pointer;;
+}
+.Categories button a{
+  display: block;
+  padding: 13px 10px;
+}
+
+.MenuIcon{
+  display: none;
+  padding: 10px;
+  
+}
+
+.NavLogo{
+  color: #000;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 120%;
+  text-decoration: none;
+}
+.NavLogo p{
+  padding-left: 10px;
+}
+
+.NavLogo img{
+  width: 50px;
+    
+    padding: 1px;
+}
+
+.graphic:hover ~ .subCategoriesGraphic {display: block;}
+.digital:hover ~ .subCategoriesDigital {display: block;}
+.writing:hover ~ .subCategoriesWriting {display: block;}
+.video:hover ~ .subCategoriesVideo {display: block;}
+.music:hover ~ .subCategoriesMusic {display: block;}
+.programming:hover ~ .subCategoriesProgramming {display: block;}
+.miscellaneous:hover ~ .subCategoriesMiscellaneous {display: block;}
+
+.subCategoriesGraphic, .subCategoriesDigital,
+.subCategoriesWriting, .subCategoriesVideo,
+.subCategoriesMusic, .subCategoriesProgramming,
+.subCategoriesMiscellaneous{
+
+  display: none;
+  position: absolute;
+  transform: translate(-10px,49px);
+  background: white;
+  top: 0;
+  padding: 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: darkgrey;
+  z-index: 2;
+
+}
+.subCategoriesGraphic:hover, .subCategoriesDigital:hover,
+.subCategoriesWriting:hover, .subCategoriesVideo:hover,
+.subCategoriesMusic:hover, .subCategoriesProgramming:hover,
+.subCategoriesMiscellaneous:hover{
+  display: block;
+}
+
+.subCategoriesContainer{
+  display: flex;
+
+
+}
+.subCategoriesColumn {
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+
+  text-align: left;
+
+  background: white;
+  width: 100%;
+}
+.subCategoriesColumn a{
+  padding: 5px;
+}
+.subCategoriesColumn a:hover{
+  text-decoration: underline;
+}
+
+@keyframes animateSideBar {
+
+  from{
+    transform: translate(0%, 0px);
+  }
+  to{
+    transform: translate(100%, 0px);
+  }
+}
+
+.sideBar{
+  
+  z-index: 999;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  transition: 2s;
+}
+
+.sideBarContent{
+  display: flex;
+  flex-direction: column ;
+}
+.sideBarContent button{
+  
+  padding: 20px;
+  border: none;
+  margin-right: auto;
+}
+.sideBarContent a{
+  padding: 15px 90px;
+  font-size: 170%;
+}
+.sideBarContent a:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .dropdown{
+    display: none;
+  }
+  .Categories{
+    padding: 0px 0px;
+  }
+
+  .MenuIcon{
+    display: block;
+  }
+  
+}

@@ -1,0 +1,72 @@
+.body{
+  margin: 20px;
+  height: 710px;
+  overflow: hidden;
+}
+.selectEditor{
+  display: flex;
+
+}
+.selectEditor button{
+  width: 100%;
+  background: none;
+  font-size: 150%;
+  padding: 20px;
+  border: none;
+  border-bottom: solid;
+  margin: 10px;
+}
+.selectEditor button:focus{
+  color: red;
+}
+.listContainer{
+  width: 100%;
+  height: 500px;
+
+
+  overflow:scroll;
+}
+.list{
+  width: 100%;
+  background: none;
+  display: flex;
+  margin: 10px 0px;
+  border: solid;
+  border-color: lightgrey;
+  padding: 10px;
+}
+.list img{
+  width: 100px;
+  height: 136px;
+  object-fit: cover;
+}
+.listText{
+  max-height: 136px;
+  overflow: hidden;
+  padding-left: 7px;
+}
+.listText p{
+  margin: 0;
+}
+.listText h3{
+  margin: 0;
+}
+.formContainer{
+  padding: 20px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+}
+.form input{
+  margin: 10px;
+  font-size: 170%;
+  font-weight: bold;
+
+}
+.form textarea{
+  height: 300px;
+  font-size: 130%;
+  margin: 10px;
+
+}
